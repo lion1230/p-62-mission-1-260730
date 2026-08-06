@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: JSB260805
+server:
+  port: 8080
