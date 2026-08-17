@@ -6,7 +6,7 @@ plugins {
 
 group = "com.mysite.sbb"
 version = "0.0.1-SNAPSHOT"
-description = "JSB260805"
+description = "SBB"
 
 java {
     toolchain {
@@ -28,6 +28,9 @@ dependencies {
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
     testAnnotationProcessor("org.projectlombok:lombok")
     implementation ("nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:4.0.0")
+    runtimeOnly("com.h2database:h2")
+    implementation("org.springframework.boot:spring-boot-h2console")
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 }
 
 tasks.withType<Test> {
