@@ -28,6 +28,7 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
     testAnnotationProcessor("org.projectlombok:lombok")
+    implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
     implementation ("nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:4.0.0")
     runtimeOnly("com.h2database:h2")
     implementation("org.springframework.boot:spring-boot-h2console")
